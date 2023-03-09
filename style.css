@@ -1,2 +1,65 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+
 .attribution { font-size: 11px; text-align: center; }
 .attribution a { color: hsl(228, 45%, 44%); }
+
+body {
+    font-family: 'Poppins', sans-serif;
+}
+
+/* override some default bootstrap styles */
+
+.nav-link {
+    padding-bottom: 0;
+}
+
+.navbar-brand {
+    font-size: 1.5rem;
+}
+
+.navbar-light .navbar-toggler {
+    border: none;
+}
+
+.navbar-brand {
+    font-weight: bold;
+}
+
+/* Navbar Styles */
+
+nav {
+    background-color: #fff;
+}
+
+.nav-btn-container a {
+    text-decoration: none;
+    cursor: pointer;
+}
+
+.login-btn {
+    color: rgba(0,0,0,.55);
+    margin-right: 1rem;
+    padding-top: 5px;
+    padding-bottom: 5px;
+}
+
+.login-btn:hover {
+    color:black;
+}
+
+.sign-up-btn {
+    /* border: 1px solid black; */
+    border-radius: 1rem;
+    min-width: 100px;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    text-align: center;
+    color:#fff;
+    background-color: hsl(180, 66%, 49%);
+}
+
+.sign-up-btn:hover {
+    background-color: hsl(180, 80%, 49%);
+    color:#fff;
+}
+
