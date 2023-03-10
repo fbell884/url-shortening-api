@@ -3,7 +3,12 @@
 .attribution { font-size: 11px; text-align: center; }
 .attribution a { color: hsl(228, 45%, 44%); }
 
+html, body {
+    overflow-x: hidden;
+  }
+
 body {
+    position: relative;
     font-family: 'Poppins', sans-serif;
 }
 
@@ -63,3 +68,23 @@ nav {
     color:#fff;
 }
 
+/* Banner Component Styles */
+#banner h1 {
+    font-size: 3rem;
+    font-weight: 900;
+    padding-bottom: 0.5rem;
+}
+
+@media (max-width: 1115px) {
+    #banner h1 {
+        font-size: 2rem;
+    }
+}
+
+#banner .subhead {
+    color: grey;
+}
+
+#banner img {
+    max-width: inherit;
+}
