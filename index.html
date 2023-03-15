@@ -7,8 +7,7 @@
   <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
   <link rel="stylesheet" href="style.css">
-  <title>Frontend Mentor | Shortly URL shortening API Challenge</title>
-
+  <title>URL Shortner | Shortly</title>
 </head>
 <body>
 
@@ -60,23 +59,13 @@
                 <div class="url-form w-100 px-3">
                   <form id="url-short">
                     <input class="p-2 mb-3 mb-md-0" type="text" id="url" name="url" placeholder="Shorten a link here...">
-                    <button class="p-2" type="button" id="submit">Shorten It!</button>
+                    <button class="p-2" type="submit" id="submit">Shorten It!</button>
+                    <p id="error-text" class="text-start d-none">Please enter a valid URL (https://www.example.com/)</p>
                   </form>
                 </div>
             </div>
-            <div class="col-10">
-              <div class="urls w-100 px-3">
-                <div class="d-block d-md-flex justify-content-md-between">
-                  <div class="entered-url">
-                    <p>www.google.com</p>
-                  </div>
-                  <hr class="d-block d-md-none">
-                  <div class="shortened-url">
-                    <span>https://url.com/</span>
-                    <button class="px-3 py-1">Copy</button>
-                  </div>
-                </div>
-              </div>
+            <div class="col-10 addUrls">
+            
             </div>
           </div>
         </div>
