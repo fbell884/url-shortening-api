@@ -63,7 +63,7 @@ nav {
     background-color: hsl(180, 66%, 49%);
 }
 
-.sign-up-btn:hover {
+#submit:hover, .copy-btn:hover, .sign-up-btn:hover {
     background-color: hsl(180, 80%, 49%);
     color:#fff;
 }
@@ -153,8 +153,16 @@ nav {
     box-shadow: 5px 5px 8px lightgrey;
 }
 
+
+@media (min-width: 768px) {
+    .entered-url {
+        max-width: 50%;
+    }
+}
+
 .entered-url p {
     margin-bottom: 0;
+    overflow-wrap: break-word;
 }
 
 .shortened-url span {
@@ -163,7 +171,7 @@ nav {
 
 .shortened-url button {
     margin-left: 1rem;
-    background-color: hsl(180, 80%, 49%);
+    background-color: hsl(180, 66%, 49%);
     color: white;
     border: none;
     border-radius: 5px;
@@ -175,4 +183,27 @@ nav {
         margin-top: 1rem;
         width: 100%;
     }
+}
+
+
+#url-short p {
+    color: red;
+    margin-bottom: 0;
+}
+
+@media (min-width: 768px) {
+    #url-short p {
+        margin-left: 1.25rem;
+    }
+}
+
+#url-short .error {
+    border: 2px solid red;
+}
+.copy-btn {
+    min-width: 95px;
+}
+
+.copy-btn:focus {
+    background-color: hsl(257, 27%, 26%);
 }
