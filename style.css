@@ -307,3 +307,28 @@ nav {
     text-align: center;
 }
 
+footer {
+    background-color:hsl(260, 8%, 14%);
+    color: white;
+    min-height: 100%;
+}
+
+footer h2 {
+    font-size: 1.75rem;
+    padding-bottom: 0.75rem;
+}
+
+footer ul {
+   list-style: none;
+   padding: 0;
+}
+
+footer ul li {
+    padding-bottom: 0.75rem;
+    color:grey;
+}
+
+footer .social-icons {
+    padding: 0 7px;
+}
+
