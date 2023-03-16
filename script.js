@@ -124,7 +124,7 @@ function createDiv(enteredUrl, newUrl) {
   function copyText() {
     let copyBtns = document.querySelectorAll('.copy-btn');
     copyBtns.forEach(btn => {
-        btn.addEventListener("click", () => {
+        btn.addEventListener("click", (e) => {
             let newCode = btn.previousElementSibling.innerHTML;
             let tempTextArea = document.createElement("textarea");
             tempTextArea.value = newCode;
@@ -132,7 +132,7 @@ function createDiv(enteredUrl, newUrl) {
             navigator.clipboard.writeText(tempTextArea.value);
             tempTextArea.remove();
 
-            let activeBtn = document.activeElement;
+            let activeBtn = e.target
             if (activeBtn === btn) {
                 activeBtn.innerHTML = 'Copied!';
             }
