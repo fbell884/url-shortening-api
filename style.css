@@ -85,7 +85,7 @@ nav {
     }
 }
 
-#banner .subhead {
+.subhead {
     color: grey;
 }
 
@@ -95,9 +95,8 @@ nav {
 
 /* Content Section */
 
-#content {
+#url-shortener {
     background-color: #eff1f7;
-    min-height: 500px;
     width: 100%;
 }
 
@@ -207,3 +206,104 @@ nav {
 .copy-btn:focus {
     background-color: hsl(257, 27%, 26%);
 }
+
+#lower-content {
+    background-color: #eff1f7;
+    padding-top: 5rem;
+    padding-bottom: 5rem;
+    height: 100%;
+}
+
+.circle-background {
+    width: 75px;
+    height: 75px;
+    background: hsl(257, 27%, 26%);
+    border-radius: 50%;
+    background-image: url('images/icon-brand-recognition.svg');
+    background-repeat: no-repeat;
+    background-position:50% 50%;
+    background-size: 50%;
+    margin-top: -37px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+#record .circle-background {
+    background-image: url('images/icon-detailed-records.svg');
+}
+
+#customize .circle-background {
+    background-image: url('images/icon-fully-customizable.svg');
+}
+
+.card {
+    border: none;
+    text-align: center;
+}
+
+.card-col {
+    padding-right: 1rem;
+    padding-left: 1rem;
+}
+
+.card-body .card-title {
+    font-size: 1.35rem;
+}
+
+.rectangle {
+    height: 100px;
+    width: 5px;
+    padding-right: 0;
+    background-color: hsl(180, 66%, 49%);
+    align-items: center;
+    align-self: center;
+}
+
+@media (min-width: 768px) {
+    #record .card {
+        margin-top: 3rem;
+    }
+    #customize .card {
+        margin-top: 6rem;
+    }
+    .card-container .rectangle {
+        height: 10px;
+        width: 30px;
+    }
+    .card-col {
+        padding-right: 0;
+        padding-left: 0;
+    }
+    .card {
+        text-align: start;
+    }
+    .circle-background {
+        margin-left: 1.5rem;
+    }
+}
+
+#bottom-cta {
+    background-color:hsl(257, 27%, 26%);
+    background-image: url('images/bg-boost-desktop.svg');
+}
+
+
+#bottom-cta h2 {
+    color: white;
+    font-size: 2.25rem;
+    font-weight: bolder;
+    padding: 3rem 1rem 1rem;
+}
+
+.boost-btn {
+    border-radius: 2rem;
+    padding: 6px 30px;
+    font-weight: bolder;
+    font-size: 1.25rem;
+    text-align: center;
+    color:#fff;
+    background-color: hsl(180, 66%, 49%);
+    border: none;
+    text-align: center;
+}
+
