@@ -30,6 +30,36 @@ body {
     font-weight: bold;
 }
 
+@media (max-width: 768px) {
+    .navbar-collapse {
+        text-align: center;
+        width: 60%;
+        background-color: hsl(257, 27%, 26%);
+        border-radius: 1rem;
+        padding: 1rem 0;
+    }
+
+    .navbar-collapse .nav-link {
+        color: #fff!important;
+    }
+
+    .navbar-collapse hr {
+        width: 80%;
+        margin: 1rem auto;
+        background-color: lightgrey;
+    }
+
+    .nav-btn-container {
+        text-align: center;
+        justify-content: center;
+    }
+
+    .nav-btn-container .login-btn {
+        color: #fff;
+        break-after: always;
+    }
+}
+
 /* Navbar Styles */
 
 nav {
