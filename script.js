@@ -64,7 +64,7 @@ function renderUrls(urls) {
         newDiv.setAttribute("class", "urls w-100 px-3");
         newDiv.setAttribute('data-key', url.id);
         newDiv.innerHTML = createDiv(url.name, url.new);
-        shortenedUrls.append(newDiv);
+        shortenedUrls.insertBefore(newDiv, shortenedUrls.firstChild);
     });
 
     copyText();
