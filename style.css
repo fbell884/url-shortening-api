@@ -237,6 +237,12 @@ nav {
     background-color: hsl(257, 27%, 26%);
 }
 
+@media (max-width: 768px) {
+    .copy-btn:hover {
+        background-color: hsl(257, 27%, 26%);
+    }
+}
+
 #lower-content {
     background-color: #eff1f7;
     padding-top: 5rem;
