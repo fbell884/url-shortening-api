@@ -1,4 +1,3 @@
-
 const submitBtn = document.getElementById("submit");
 const inputVal = document.getElementById("url");
 const errorText = document.getElementById("error-text");
@@ -123,6 +122,7 @@ function createDiv(enteredUrl, newUrl) {
 
   function copyText() {
     let copyBtns = document.querySelectorAll('.copy-btn');
+    let screenSize = window.screen.width;
     copyBtns.forEach(btn => {
         btn.addEventListener("click", (e) => {
             let newCode = btn.previousElementSibling.innerHTML;
@@ -137,7 +137,7 @@ function createDiv(enteredUrl, newUrl) {
                 activeBtn.innerHTML = 'Copied!';
             }
         });
-        btn.addEventListener("blur", () => {
+        btn.addEventListener(screenSize < 768 ? "mouseout" : "blur", () => {
             btn.innerHTML = "Copy";
         });
     });
