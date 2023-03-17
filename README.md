@@ -79,6 +79,12 @@ function createUrlObj(enteredUrl, newUrl) {
 
     }
 }
+
+function addToLocalStorage(urls) {
+    localStorage.setItem('urls', JSON.stringify(urls));
+
+    renderUrls(urls);
+}
 ```
 I also learned a new way to dynamically add markup via JS code. This was done by creating an html element and simply creating a function and returning a string that is set to the created element's innerHTML. This was to add the shortened URLs. 
 
